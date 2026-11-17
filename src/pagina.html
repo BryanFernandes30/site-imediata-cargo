@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="vendor/dc-runtime.js"></script>
+</head>
+<body>
+
+
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/images/logo.png"><meta name="description" content="Transportadora Imediata Cargo: transporte rodoviário de cargas para todo o Brasil, a partir de 150 kg. Peça sua cotação de frete online."><title>Imediata Cargo — Transporte rodoviário de cargas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-display: swap;
+  src: url("assets/fonts/archivo-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-display: swap;
+  src: url("assets/fonts/archivo-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-display: swap;
+  src: url("assets/fonts/archivo-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/ibm-plex-mono-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/ibm-plex-mono-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* symbols2 */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/ibm-plex-mono-symbols2.woff2") format('woff2');
+  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/ibm-plex-mono-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/ibm-plex-mono-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/ibm-plex-mono-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/ibm-plex-mono-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/ibm-plex-mono-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* symbols2 */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/ibm-plex-mono-symbols2.woff2") format('woff2');
+  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/ibm-plex-mono-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/ibm-plex-mono-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/ibm-plex-mono-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/public-sans-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/public-sans-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/public-sans-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/public-sans-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/public-sans-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/public-sans-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/public-sans-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/public-sans-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/public-sans-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/public-sans-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/public-sans-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/public-sans-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:oklch(0.975 0.005 85);color:oklch(0.22 0.01 265);font-family:'Public Sans',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:oklch(0.22 0.01 265);text-decoration:none}
+header a{color:oklch(0.97 0.005 85)}
+header a:hover{color:oklch(0.86 0.11 195)}
+a:hover{color:oklch(0.48 0.09 205)}
+.strip::-webkit-scrollbar{display:none}
+a:focus-visible,button:focus-visible,summary:focus-visible,input[type=checkbox]:focus-visible{outline:3px solid oklch(0.8 0.12 195);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+summary{list-style:none;cursor:pointer}
+summary::-webkit-details-marker{display:none}
+details[open] .faq-plus{transform:rotate(45deg)}
+input::placeholder{color:oklch(0.62 0.01 265)}
+input:focus{outline:none;border-color:oklch(0.8 0.12 195)!important;box-shadow:0 0 0 3px oklch(0.8 0.12 195 / .25)}
+@keyframes ic-ta{0%,4%{left:0;opacity:0}6%{left:0;opacity:1}27%{left:33.333%;opacity:1}29%,100%{left:33.333%;opacity:0}}
+@keyframes ic-tb{0%,34%{left:33.333%;opacity:0}36%{left:33.333%;opacity:1}57%{left:66.667%;opacity:1}59%,100%{left:66.667%;opacity:0}}
+@keyframes ic-tc{0%,64%{left:66.667%;opacity:0}66%{left:66.667%;opacity:1}90%{left:100%;opacity:1}93%,100%{left:100%;opacity:0}}
+@keyframes ic-prog{0%,5%{width:0;opacity:1}28%,35%{width:33.333%}58%,65%{width:66.667%}90%,96%{width:100%;opacity:1}99%{width:100%;opacity:0}100%{width:0;opacity:0}}
+@keyframes ic-sway{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+@keyframes ic-fly{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes ic-n1{0%,1%{background:oklch(0.2 0.01 265);color:#fff;border-color:rgba(255,255,255,.28)}3%,98%{background:oklch(0.8 0.12 195);color:oklch(0.2 0.01 265);border-color:oklch(0.8 0.12 195)}100%{background:oklch(0.2 0.01 265);color:#fff;border-color:rgba(255,255,255,.28)}}
+@keyframes ic-n2{0%,27%{background:oklch(0.2 0.01 265);color:#fff;border-color:rgba(255,255,255,.28)}29%,98%{background:oklch(0.8 0.12 195);color:oklch(0.2 0.01 265);border-color:oklch(0.8 0.12 195)}100%{background:oklch(0.2 0.01 265);color:#fff;border-color:rgba(255,255,255,.28)}}
+@keyframes ic-n3{0%,57%{background:oklch(0.2 0.01 265);color:#fff;border-color:rgba(255,255,255,.28)}59%,98%{background:oklch(0.8 0.12 195);color:oklch(0.2 0.01 265);border-color:oklch(0.8 0.12 195)}100%{background:oklch(0.2 0.01 265);color:#fff;border-color:rgba(255,255,255,.28)}}
+@keyframes ic-n4{0%,89%{background:oklch(0.2 0.01 265);color:#fff;border-color:rgba(255,255,255,.28)}91%,98%{background:oklch(0.8 0.12 195);color:oklch(0.2 0.01 265);border-color:oklch(0.8 0.12 195)}100%{background:oklch(0.2 0.01 265);color:#fff;border-color:rgba(255,255,255,.28)}}
+@keyframes ic-s1{0%{opacity:.4}2%,29%{opacity:1}32%,100%{opacity:.4}}
+@keyframes ic-s2{0%,27%{opacity:.4}29%,58%{opacity:1}61%,100%{opacity:.4}}
+@keyframes ic-s3{0%,57%{opacity:.4}59%,89%{opacity:1}92%,100%{opacity:.4}}
+@keyframes ic-s4{0%,89%{opacity:.4}91%,96%{opacity:1}99%,100%{opacity:.4}}
+@keyframes ic-wheel{to{transform:rotate(360deg)}}
+@keyframes ic-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-1.5px)}}
+@media (prefers-reduced-motion:reduce){.ic-anim,.ic-anim *{animation:none!important}.ic-node{background:oklch(0.8 0.12 195)!important;color:oklch(0.2 0.01 265)!important}}
+</style>
+</helmet>
+
+<div id="topo" style="min-height:100vh">
+
+<div style="background:oklch(0.17 0.01 265);font-size:13px">
+  
+</div>
+
+<header style="position:sticky;top:0;z-index:50;background:oklch(0.31 0.01 265 / .96);backdrop-filter:blur(10px);border-bottom:1px solid oklch(1 0 0 / .08)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: center; justify-content: space-between;">
+    <a href="#topo" style="display:flex;align-items:center;gap:14px"><img src="assets/images/logo.png" alt="Imediata Cargo" style="height:52px;width:auto;display:block"><span style="display:flex;flex-direction:column;line-height:1;gap:5px"><span style="font-family:'Archivo',sans-serif;font-weight:800;font-stretch:112%;font-size:21px;letter-spacing:-.005em;color:white">IMEDIATA CARGO</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:oklch(0.82 0.12 195)">Excelência em transportes</span></span></a>
+    <nav style="display:flex;flex-wrap:wrap;gap:8px 28px;align-items:center;font-size:15px;font-weight:600">
+      <a href="#servicos">Serviços</a>
+      
+      <a href="#para-quem">Para quem</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#contato">Contato</a>
+      <a href="#cotacao" style="background:oklch(0.8 0.12 195);color:oklch(0.2 0.01 265);padding:11px 20px;border-radius:6px;font-weight:700" style-hover="background:oklch(0.86 0.11 195);color:oklch(0.2 0.01 265)">Solicitar cotação</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO + FORM -->
+<section id="cotacao" style="background:oklch(0.2 0.01 265);color:oklch(0.97 0.005 85);position:relative;overflow:hidden;scroll-margin-top:80px">
+  <div style="position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 46px,oklch(1 0 0 / .025) 46px 48px);pointer-events:none"></div>
+  <div style="position:relative;max-width:1240px;margin:0 auto;padding:72px 24px 80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:56px;align-items:start">
+
+    <div style="display:flex;flex-direction:column;gap:28px;padding-top:12px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:oklch(0.82 0.12 195)">Transporte rodoviário de cargas · Todo o Brasil</span>
+      <h1 style="margin:0;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:108%;font-size:clamp(40px,5.6vw,72px);line-height:.98;letter-spacing:-.025em;text-wrap:balance">Sua carga no destino, <span style="color:oklch(0.82 0.12 195)">na hora certa.</span></h1>
+      <p style="margin:0;font-size:19px;line-height:1.55;color:oklch(0.86 0.01 265);max-width:520px;text-wrap:pretty">Coleta, transporte e entrega com responsabilidade e comunicação direta. Peça sua cotação em um minuto e receba o retorno no seu e-mail.</p>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;font-size:16px;font-weight:500">
+        <li style="display:flex;gap:14px;align-items:center"><span style="width:10px;height:10px;background:oklch(0.8 0.12 195);transform:rotate(45deg);flex:none"></span>Carga segurada pela Sompo Seguros</li>
+        <li style="display:flex;gap:14px;align-items:center"><span style="width:10px;height:10px;background:oklch(0.8 0.12 195);transform:rotate(45deg);flex:none"></span>Cotação analisada por nossa equipe comercial</li>
+        <li style="display:flex;gap:14px;align-items:center"><span style="width:10px;height:10px;background:oklch(0.8 0.12 195);transform:rotate(45deg);flex:none"></span>Atendimento direto por telefone e WhatsApp</li>
+      <li style="display:flex;gap:14px;align-items:center"><span style="width:10px;height:10px;background:oklch(0.8 0.12 195);transform:rotate(45deg);flex:none"></span>Entregamos em todo o país, a partir de 150 kg</li>
+      </ul>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:4px">
+        <a href="https://wa.me/5511949236272" style="display:inline-flex;align-items:center;gap:9px;align-self:flex-start;display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border:1.5px solid oklch(0.97 0.005 85 / .5);border-radius:6px;color:oklch(0.97 0.005 85);font-weight:600" style-hover="background:oklch(0.97 0.005 85);color:oklch(0.2 0.01 265)"><svg width="24" height="24" sc-camel-view-box="0 0 24 24" aria-hidden="true" style="flex:none"><path d="M12 2.6a9.4 9.4 0 0 0-8 14.3L2.8 21.3l4.5-1.2A9.4 9.4 0 1 0 12 2.6z" fill="none" stroke="oklch(0.74 0.19 150)" stroke-width="2" stroke-linejoin="round"></path><path transform="translate(5.6 5.5) scale(.5)" fill="oklch(0.74 0.19 150)" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>WhatsApp (11) 94923-6272</a>
+      </div>
+    </div>
+
+    <!-- FORM CARD -->
+    <div style="background:oklch(0.99 0.003 85);color:oklch(0.22 0.01 265);border-radius:12px;padding:32px;box-shadow:0 30px 80px oklch(0.1 0.01 265 / .5);border-top:6px solid oklch(0.8 0.12 195)">
+      <sc-if value="{{ showForm }}" hint-placeholder-val="{{ true }}">
+      <form sc-camel-on-submit="{{ submit }}" style="display:flex;flex-direction:column;gap:22px" novalidate="">
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <h2 style="margin:0;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:105%;font-size:28px;letter-spacing:-.015em">Solicite sua cotação</h2>
+          <span style="font-size:14px;color:oklch(0.45 0.01 265)">Campos com * são obrigatórios.</span>
+        </div>
+
+        <fieldset style="border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;min-width:0">
+          
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px">
+            <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600">Nome da empresa *
+              <input type="text" value="{{ empresa }}" sc-camel-on-change="{{ setEmpresa }}" placeholder="Razão social ou fantasia" autocomplete="organization" style="font:inherit;font-weight:400;font-size:16px;padding:12px 14px;border:1.5px solid oklch(0.85 0.01 265);border-radius:6px;background:white;color:oklch(0.22 0.01 265)">
+            </label>
+            <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600">E-mail para contato *
+              <input type="email" value="{{ email }}" sc-camel-on-change="{{ setEmail }}" placeholder="voce@empresa.com.br" autocomplete="email" style="font:inherit;font-weight:400;font-size:16px;padding:12px 14px;border:1.5px solid oklch(0.85 0.01 265);border-radius:6px;background:white;color:oklch(0.22 0.01 265)">
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset style="border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;min-width:0">
+          
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px">
+            <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600">Origem da carga *
+              <input type="text" value="{{ origem }}" sc-camel-on-change="{{ setOrigem }}" placeholder="Cidade / UF" style="font:inherit;font-weight:400;font-size:16px;padding:12px 14px;border:1.5px solid oklch(0.85 0.01 265);border-radius:6px;background:white;color:oklch(0.22 0.01 265)">
+            </label>
+            <div style="display:flex;flex-direction:column;gap:8px"><label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600">Destino da carga *
+              <input type="text" value="{{ destino }}" disabled="{{ sameCity }}" sc-camel-on-change="{{ setDestino }}" placeholder="Cidade / UF" style="font:inherit;font-weight:400;font-size:16px;padding:12px 14px;border:1.5px solid oklch(0.85 0.01 265);border-radius:6px;background:white;color:oklch(0.22 0.01 265)">
+            </label><label style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:500;cursor:pointer;color:oklch(0.35 0.01 265)"><input type="checkbox" checked="{{ sameCity }}" sc-camel-on-change="{{ toggleSame }}" style="width:18px;height:18px;margin:0;accent-color:oklch(0.48 0.09 205);cursor:pointer">Mesma cidade da origem</label></div>
+          </div>
+        </fieldset>
+
+        <fieldset style="border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;min-width:0">
+          
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px">
+            <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600">Peso total da carga (kg) *
+              <input type="text" inputmode="decimal" value="{{ peso }}" sc-camel-on-change="{{ setPeso }}" placeholder="Ex.: 450" style="font:inherit;font-weight:400;font-size:16px;padding:12px 14px;border:1.5px solid oklch(0.85 0.01 265);border-radius:6px;background:white;color:oklch(0.22 0.01 265)">
+            </label>
+            <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600">Valor da nota fiscal (R$) *
+              <input type="text" inputmode="decimal" value="{{ nf }}" sc-camel-on-change="{{ setNf }}" placeholder="Ex.: 12.500,00" style="font:inherit;font-weight:400;font-size:16px;padding:12px 14px;border:1.5px solid oklch(0.85 0.01 265);border-radius:6px;background:white;color:oklch(0.22 0.01 265)">
+            </label>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:10px;margin-top:4px">
+            <span style="font-size:13px;font-weight:600">Medidas de cada volume *</span><span style="font-size:12px;font-weight:400;color:oklch(0.45 0.01 265)">Use cm (ex.: 30) ou metros com vírgula (ex.: 1,20). Pode misturar.</span>
+            <sc-for list="{{ volumes }}" as="v" hint-placeholder-count="1">
+              <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) auto;gap:8px;align-items:end;background:oklch(0.96 0.006 85);padding:12px;border-radius:8px">
+                <label style="display:flex;flex-direction:column;gap:4px;font-size:11px;font-weight:600;color:oklch(0.4 0.01 265);font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em">Qtd.
+                  <input type="text" inputmode="numeric" value="{{ v.q }}" sc-camel-on-change="{{ v.onQ }}" style="font:inherit;font-family:'Public Sans',sans-serif;text-transform:none;letter-spacing:0;font-size:16px;font-weight:400;width:100%;box-sizing:border-box;padding:10px;border:1.5px solid oklch(0.85 0.01 265);border-radius:6px;background:white;color:oklch(0.22 0.01 265)">
+                </label>
+                <label style="display:flex;flex-direction:column;gap:4px;font-size:11px;font-weight:600;color:oklch(0.4 0.01 265);font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em">Compr.
+                  <input type="text" inputmode="decimal" value="{{ v.c }}" sc-camel-on-change="{{ v.onC }}" placeholder="0" style="font:inherit;font-family:'Public Sans',sans-serif;text-transform:none;letter-spacing:0;font-size:16px;font-weight:400;width:100%;box-sizing:border-box;padding:10px;border:1.5px solid oklch(0.85 0.01 265);border-radius:6px;background:white;color:oklch(0.22 0.01 265)">
+                </label>
+                <label style="display:flex;flex-direction:column;gap:4px;font-size:11px;font-weight:600;color:oklch(0.4 0.01 265);font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em">Largura
+                  <input type="text" inputmode="decimal" value="{{ v.l }}" sc-camel-on-change="{{ v.onL }}" placeholder="0" style="font:inherit;font-family:'Public Sans',sans-serif;text-transform:none;letter-spacing:0;font-size:16px;font-weight:400;width:100%;box-sizing:border-box;padding:10px;border:1.5px solid oklch(0.85 0.01 265);border-radius:6px;background:white;color:oklch(0.22 0.01 265)">
+                </label>
+                <label style="display:flex;flex-direction:column;gap:4px;font-size:11px;font-weight:600;color:oklch(0.4 0.01 265);font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em">Altura
+                  <input type="text" inputmode="decimal" value="{{ v.a }}" sc-camel-on-change="{{ v.onA }}" placeholder="0" style="font:inherit;font-family:'Public Sans',sans-serif;text-transform:none;letter-spacing:0;font-size:16px;font-weight:400;width:100%;box-sizing:border-box;padding:10px;border:1.5px solid oklch(0.85 0.01 265);border-radius:6px;background:white;color:oklch(0.22 0.01 265)">
+                </label>
+                <button type="button" sc-camel-on-click="{{ v.remove }}" aria-label="Remover volume" style="width:44px;height:44px;border:0;border-radius:6px;background:transparent;color:oklch(0.45 0.01 265);font-size:22px;cursor:pointer;opacity:{{ v.removeOpacity }}" style-hover="background:oklch(0.9 0.02 25);color:oklch(0.45 0.18 25)">×</button>
+              </div>
+            </sc-for>
+            <button type="button" sc-camel-on-click="{{ addVolume }}" style="align-self:flex-start;font:inherit;font-size:14px;font-weight:600;background:transparent;border:1.5px dashed oklch(0.8 0.12 195);color:oklch(0.4 0.08 205);padding:9px 16px;border-radius:6px;cursor:pointer" style-hover="background:oklch(0.95 0.03 195)">+ Adicionar outro volume</button>
+          </div>
+
+          <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600">Cubagem total (m³) *
+            <input type="text" inputmode="decimal" value="{{ cubagem }}" sc-camel-on-change="{{ setCub }}" placeholder="Calculada automaticamente" style="font:inherit;font-weight:600;font-size:16px;padding:12px 14px;border:1.5px solid oklch(0.85 0.01 265);border-radius:6px;background:oklch(0.96 0.02 195);color:oklch(0.22 0.01 265)">
+            <span style="font-size:12px;font-weight:400;color:oklch(0.45 0.01 265)">Calculada a partir das medidas e quantidades. Você pode ajustar manualmente.</span>
+          </label>
+        </fieldset>
+
+        <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600">Telefone / WhatsApp (opcional)
+          <input type="tel" inputmode="numeric" maxlength="11" value="{{ telefone }}" sc-camel-on-change="{{ setTelefone }}" placeholder="11900000000" autocomplete="tel" style="font:inherit;font-weight:400;font-size:16px;padding:12px 14px;border:1.5px solid oklch(0.85 0.01 265);border-radius:6px;background:white;color:oklch(0.22 0.01 265)">
+        </label>
+        <input type="text" value="{{ trap }}" sc-camel-on-change="{{ setTrap }}" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
+
+        <sc-if value="{{ hasError }}" hint-placeholder-val="{{ false }}">
+          <div role="alert" style="background:oklch(0.95 0.04 25);color:oklch(0.35 0.14 25);padding:12px 14px;border-radius:6px;font-size:14px;line-height:1.45;font-weight:500">{{ errorMsg }}
+            <sc-if value="{{ showFallback }}" hint-placeholder-val="{{ false }}"><div style="margin-top:8px"><a href="{{ whatsLink }}" style="color:oklch(0.35 0.14 25);font-weight:700;text-decoration:underline">Enviar por WhatsApp</a></div></sc-if>
+          </div>
+        </sc-if>
+
+        <button type="submit" style="font:inherit;font-weight:700;font-size:17px;background:oklch(0.8 0.12 195);color:oklch(0.2 0.01 265);border:0;border-radius:8px;padding:16px 24px;cursor:pointer;letter-spacing:.01em" style-hover="background:oklch(0.86 0.11 195)">{{ submitLabel }}</button>
+        <span style="font-size:12px;line-height:1.5;color:oklch(0.45 0.01 265)">Ao enviar, você autoriza o uso dos dados informados apenas para retorno desta cotação, conforme a LGPD.</span>
+      </form>
+      </sc-if>
+
+      <sc-if value="{{ showSuccess }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:18px;padding:24px 0;align-items:flex-start">
+          <div style="width:56px;height:56px;border-radius:50%;background:oklch(0.8 0.12 195);display:flex;align-items:center;justify-content:center"><svg width="28" height="28" sc-camel-view-box="0 0 28 28"><polyline points="6,15 12,21 22,8" fill="none" stroke="oklch(0.2 0.01 265)" stroke-width="3.5" stroke-linecap="square"></polyline></svg></div>
+          <h2 style="margin:0;font-family:'Archivo',sans-serif;font-weight:800;font-size:28px;letter-spacing:-.015em">Solicitação enviada</h2>
+          <p style="margin:0;font-size:16px;line-height:1.55;color:oklch(0.35 0.01 265)">Recebemos os dados da sua carga. Nossa equipe comercial vai analisar e responder para <strong>{{ email }}</strong> com a cotação.</p>
+          <button type="button" sc-camel-on-click="{{ reset }}" style="font:inherit;font-weight:600;font-size:15px;background:transparent;border:1.5px solid oklch(0.22 0.01 265);color:oklch(0.22 0.01 265);padding:11px 20px;border-radius:6px;cursor:pointer" style-hover="background:oklch(0.22 0.01 265);color:white">Nova cotação</button>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section style="background:oklch(0.8 0.12 195);color:oklch(0.2 0.01 265)">
+  <div style="max-width:1240px;margin:0 auto;padding:22px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px 32px">
+    <div style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase">Razão social</span><strong style="font-size:16px">Transportadora Imediata Cargo LTDA</strong></div>
+    <div style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase">CNPJ</span><strong style="font-size:16px">46.444.343/0001-46</strong></div>
+    <div style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase">Seguradora</span><strong style="font-size:16px">Sompo Seguros</strong></div>
+    <div style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase">Base operacional</span><strong style="font-size:16px">São Paulo · SP</strong></div>
+    <div style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase">No mercado</span><strong style="font-size:16px">Há mais de 6 anos</strong></div>
+  </div>
+</section>
+
+
+<!-- SERVIÇOS -->
+<section id="servicos" style="max-width:1240px;margin:0 auto;padding:72px 24px 24px;scroll-margin-top:80px">
+  <div style="display:flex;flex-wrap:wrap;gap:24px 64px;justify-content:space-between;align-items:end;margin-bottom:48px">
+    <div style="display:flex;flex-direction:column;gap:14px;max-width:640px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:oklch(0.48 0.09 205)">Serviços</span>
+      <h2 style="margin:0;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:105%;font-size:clamp(32px,4vw,52px);line-height:1.02;letter-spacing:-.02em;text-wrap:balance">Soluções de transporte para cada tipo de carga</h2>
+    </div>
+    <a href="#cotacao" style="font-weight:700;border-bottom:2px solid oklch(0.8 0.12 195);padding-bottom:3px">Pedir cotação →</a>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:20px">
+    <div style="background:white;border:1px solid oklch(0.9 0.008 85);border-radius:10px;padding:28px;display:flex;flex-direction:column;gap:14px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:oklch(0.48 0.09 205)">01</span>
+      <h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:700;font-size:22px">Carga fracionada</h3>
+      <p style="margin:0;line-height:1.6;color:oklch(0.38 0.01 265)">Pague apenas pelo espaço que sua mercadoria ocupa, com coleta e entrega porta a porta.</p>
+    </div>
+    <div style="background:white;border:1px solid oklch(0.9 0.008 85);border-radius:10px;padding:28px;display:flex;flex-direction:column;gap:14px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:oklch(0.48 0.09 205)">02</span>
+      <h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:700;font-size:22px">Carga dedicada</h3>
+      <p style="margin:0;line-height:1.6;color:oklch(0.38 0.01 265)">Veículo exclusivo para o seu embarque, com rota direta e mais controle sobre o prazo.</p>
+    </div>
+    <div style="background:white;border:1px solid oklch(0.9 0.008 85);border-radius:10px;padding:28px;display:flex;flex-direction:column;gap:14px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:oklch(0.48 0.09 205)">03</span>
+      <h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:700;font-size:22px">Entregas urgentes</h3>
+      <p style="margin:0;line-height:1.6;color:oklch(0.38 0.01 265)">Para quando o prazo aperta: coleta ágil e atendimento prioritário pela nossa equipe.</p>
+    </div>
+    <div style="background:white;border:1px solid oklch(0.9 0.008 85);border-radius:10px;padding:28px;display:flex;flex-direction:column;gap:14px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:oklch(0.48 0.09 205)">04</span>
+      <h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:700;font-size:22px">Carga segurada</h3>
+      <p style="margin:0;line-height:1.6;color:oklch(0.38 0.01 265)">Mercadoria protegida por seguro da Sompo Seguros durante todo o transporte.</p>
+    </div>
+  </div>
+</section>
+
+<div style="max-width:1240px;margin:0 auto;padding:40px 24px 0"><div style="display:flex;align-items:center;gap:16px"><div style="flex:1;height:1px;background:oklch(0.86 0.01 85)"></div><span style="width:9px;height:9px;background:oklch(0.8 0.12 195);transform:rotate(45deg)"></span><div style="flex:1;height:1px;background:oklch(0.86 0.01 85)"></div></div></div>
+<!-- PARA QUEM -->
+<section id="para-quem" style="max-width:1240px;margin:0 auto;padding:72px 24px 24px;scroll-margin-top:80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:48px;align-items:stretch">
+  <div style="display:flex;flex-direction:column;gap:24px;justify-content:center">
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:oklch(0.48 0.09 205)">Para quem serve</span>
+    <h2 style="margin:0;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:105%;font-size:clamp(32px,4vw,52px);line-height:1.02;letter-spacing:-.02em;text-wrap:balance;">Para empresas que precisam transportar cargas</h2>
+    <p style="margin:0;font-size:18px;line-height:1.6;color:oklch(0.35 0.01 265);max-width:520px;text-wrap:pretty">Atendemos pessoas jurídicas com cargas de todos os tipos, em qualquer lugar do país. Se a sua empresa precisa despachar mercadorias com segurança e prazo, a Imediata Cargo é para você.</p>
+    <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px">
+      <li style="display:flex;gap:14px;align-items:flex-start;font-size:17px;line-height:1.5;font-weight:500"><span style="width:10px;height:10px;background:oklch(0.8 0.12 195);transform:rotate(45deg);flex:none;margin-top:8px"></span>Cargas de todos os tipos</li>
+      <li style="display:flex;gap:14px;align-items:flex-start;font-size:17px;line-height:1.5;font-weight:500"><span style="width:10px;height:10px;background:oklch(0.8 0.12 195);transform:rotate(45deg);flex:none;margin-top:8px"></span>Entregas em todo o Brasil</li>
+      <li style="display:flex;gap:14px;align-items:flex-start;font-size:17px;line-height:1.5;font-weight:500"><span style="width:10px;height:10px;background:oklch(0.8 0.12 195);transform:rotate(45deg);flex:none;margin-top:8px"></span>Cargas a partir de 150 kg</li>
+    </ul>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:20px">
+    <div style="position:relative;flex:1;min-height:440px;background:oklch(0.27 0.01 265);border-radius:14px;overflow:hidden;background-image:linear-gradient(oklch(1 0 0 / .04) 1px,transparent 1px),linear-gradient(90deg,oklch(1 0 0 / .04) 1px,transparent 1px);background-size:40px 40px">
+      <img src="assets/images/ilustracao-caminhao.svg" alt="Mapa do Brasil com rotas saindo de São Paulo" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:36px 20px">
+      <span style="display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;font-size:14px;font-weight:700;position:absolute;top:20px;left:20px;background:white;color:oklch(0.27 0.01 265)"><span style="width:9px;height:9px;border-radius:50%;background:oklch(0.8 0.12 195)"></span>Todo o território nacional</span>
+      <span style="display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;font-size:14px;font-weight:700;position:absolute;top:20px;right:20px;background:oklch(0.8 0.12 195);color:oklch(0.2 0.01 265)">A partir de 150 kg</span>
+      <span style="display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;font-size:14px;font-weight:700;position:absolute;bottom:20px;left:20px;background:oklch(0.2 0.01 265 / .85);color:white;border:1px solid oklch(1 0 0 / .14)"><span style="width:9px;height:9px;border-radius:50%;background:white"></span>Base em São Paulo · SP</span>
+    </div>
+    <div style="border:1.5px solid oklch(0.82 0.04 25);background:oklch(0.97 0.015 25);border-radius:14px;padding:22px 28px;display:flex;gap:18px;align-items:flex-start">
+      <span style="flex:none;width:32px;height:32px;border-radius:50%;background:oklch(0.45 0.17 25);color:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px">×</span>
+      <div style="display:flex;flex-direction:column;gap:4px"><strong style="font-size:17px">O que não transportamos</strong><span style="font-size:15px;line-height:1.5;color:oklch(0.35 0.01 265)">Produtos químicos. Para qualquer outro tipo de carga, peça sua cotação.</span></div>
+    </div>
+  </div>
+</section>
+
+<div style="max-width:1240px;margin:0 auto;padding:40px 24px 0"><div style="display:flex;align-items:center;gap:16px"><div style="flex:1;height:1px;background:oklch(0.86 0.01 85)"></div><span style="width:9px;height:9px;background:oklch(0.8 0.12 195);transform:rotate(45deg)"></span><div style="flex:1;height:1px;background:oklch(0.86 0.01 85)"></div></div></div>
+<!-- DIFERENCIAIS -->
+<section id="diferenciais" style="max-width:1240px;margin:0 auto;padding:72px 24px 24px;scroll-margin-top:80px">
+  <div style="display:flex;flex-direction:column;gap:14px;max-width:700px;margin-bottom:48px">
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:oklch(0.48 0.09 205)">Diferenciais</span>
+    <h2 style="margin:0;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:105%;font-size:clamp(32px,4vw,52px);line-height:1.02;letter-spacing:-.02em;text-wrap:balance;">Por que escolher a Imediata Cargo</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));border-top:2px solid oklch(0.22 0.01 265);border-left:1px solid oklch(0.86 0.01 85)">
+    <div style="padding:32px 28px 36px;border-right:1px solid oklch(0.86 0.01 85);border-bottom:1px solid oklch(0.86 0.01 85);display:flex;flex-direction:column;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:oklch(0.48 0.09 205)">01</span><h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:700;font-size:22px">Atendimento direto</h3><p style="margin:0;line-height:1.6;color:oklch(0.38 0.01 265)">Você fala com a equipe comercial por telefone, WhatsApp ou e-mail, sem intermediários e sem burocracia.</p></div>
+    <div style="padding:32px 28px 36px;border-right:1px solid oklch(0.86 0.01 85);border-bottom:1px solid oklch(0.86 0.01 85);display:flex;flex-direction:column;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:oklch(0.48 0.09 205)">02</span><h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:700;font-size:22px">Cobertura em todo o país</h3><p style="margin:0;line-height:1.6;color:oklch(0.38 0.01 265)">Levamos sua carga para qualquer estado do Brasil, a partir de 150 kg.</p></div>
+    <div style="padding:32px 28px 36px;border-right:1px solid oklch(0.86 0.01 85);border-bottom:1px solid oklch(0.86 0.01 85);display:flex;flex-direction:column;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:oklch(0.48 0.09 205)">03</span><h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:700;font-size:22px">Carga segurada</h3><p style="margin:0;line-height:1.6;color:oklch(0.38 0.01 265)">Seguro contratado com a Sompo Seguros para proteger a sua mercadoria durante o transporte.</p></div>
+    <div style="padding:32px 28px 36px;border-right:1px solid oklch(0.86 0.01 85);border-bottom:1px solid oklch(0.86 0.01 85);display:flex;flex-direction:column;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:oklch(0.48 0.09 205)">04</span><h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:700;font-size:22px">Cotação sob medida</h3><p style="margin:0;line-height:1.6;color:oklch(0.38 0.01 265)">Cada solicitação é analisada por peso, cubagem, valor da nota e rota, para um frete justo.</p></div>
+    <div style="padding:32px 28px 36px;border-right:1px solid oklch(0.86 0.01 85);border-bottom:1px solid oklch(0.86 0.01 85);display:flex;flex-direction:column;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:oklch(0.48 0.09 205)">05</span><h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:700;font-size:22px">Pedido em um minuto</h3><p style="margin:0;line-height:1.6;color:oklch(0.38 0.01 265)">Formulário simples, com cálculo automático de cubagem. Você preenche e nós respondemos por e-mail.</p></div>
+    <div style="padding:32px 28px 36px;border-right:1px solid oklch(0.86 0.01 85);border-bottom:1px solid oklch(0.86 0.01 85);display:flex;flex-direction:column;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:oklch(0.48 0.09 205)">06</span><h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:700;font-size:22px">Cargas de todos os tipos</h3><p style="margin:0;line-height:1.6;color:oklch(0.38 0.01 265)">Atendemos empresas de diferentes segmentos, com exceção apenas de produtos químicos.</p></div>
+    <div style="padding:32px 28px 36px;border-right:1px solid oklch(0.86 0.01 85);border-bottom:1px solid oklch(0.86 0.01 85);display:flex;flex-direction:column;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:oklch(0.48 0.09 205)">07</span><h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:700;font-size:22px">Empresa formalizada</h3><p style="margin:0;line-height:1.6;color:oklch(0.38 0.01 265)">Transportadora com CNPJ e inscrição estadual próprios, e seguro contratado para as operações.</p></div>
+    <div style="padding:32px 28px 36px;border-right:1px solid oklch(0.86 0.01 85);border-bottom:1px solid oklch(0.86 0.01 85);display:flex;flex-direction:column;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:oklch(0.48 0.09 205)">08</span><h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:700;font-size:22px">Cargas a partir de 150 kg</h3><p style="margin:0;line-height:1.6;color:oklch(0.38 0.01 265)">Você não precisa de grandes volumes: atendemos cargas a partir de 150 kg, para qualquer estado.</p></div>
+  </div>
+</section>
+
+<div style="max-width:1240px;margin:0 auto;padding:40px 24px 0"><div style="display:flex;align-items:center;gap:16px"><div style="flex:1;height:1px;background:oklch(0.86 0.01 85)"></div><span style="width:9px;height:9px;background:oklch(0.8 0.12 195);transform:rotate(45deg)"></span><div style="flex:1;height:1px;background:oklch(0.86 0.01 85)"></div></div></div>
+<!-- CLIENTES -->
+<section id="clientes" style="max-width:1240px;margin:0 auto;padding:72px 24px 24px;scroll-margin-top:80px">
+  <div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:end;margin-bottom:40px">
+    <div style="display:flex;flex-direction:column;gap:14px;max-width:700px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:oklch(0.48 0.09 205)">Alguns de nossos clientes</span>
+      <h2 style="margin:0;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:105%;font-size:clamp(32px,4vw,52px);line-height:1.02;letter-spacing:-.02em;text-wrap:balance">Empresas que confiam na Imediata Cargo</h2>
+    </div>
+    
+  </div>
+  <div ref="{{ stripRef }}" class="strip" sc-camel-on-mouse-enter="{{ pauseStrip }}" sc-camel-on-mouse-leave="{{ resumeStrip }}" sc-camel-on-touch-start="{{ pauseStrip }}" sc-camel-on-touch-end="{{ resumeStrip }}" style="display:flex;gap:16px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px">
+    <div style="position:relative;overflow:hidden;flex:none;width:min(260px,72vw);height:150px;background:white;border:1px solid oklch(0.86 0.01 85);border-radius:12px;display:flex;align-items:center;justify-content:center;padding:16px;text-align:center;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:110%;font-size:26px;letter-spacing:-.01em;color:oklch(0.3 0.01 265)">JVS<img src="assets/images/clientes/jvs.png" alt="JVS" sc-camel-on-error="{{ hideImg }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:28px;box-sizing:border-box;background:white"></div>
+    <div style="position:relative;overflow:hidden;flex:none;width:min(260px,72vw);height:150px;background:white;border:1px solid oklch(0.86 0.01 85);border-radius:12px;display:flex;align-items:center;justify-content:center;padding:16px;text-align:center;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:110%;font-size:26px;letter-spacing:-.01em;color:oklch(0.3 0.01 265)">Midea<img src="assets/images/clientes/midea.png" alt="Midea" sc-camel-on-error="{{ hideImg }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:28px;box-sizing:border-box;background:white"></div>
+    <div style="position:relative;overflow:hidden;flex:none;width:min(260px,72vw);height:150px;background:white;border:1px solid oklch(0.86 0.01 85);border-radius:12px;display:flex;align-items:center;justify-content:center;padding:16px;text-align:center;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:110%;font-size:26px;letter-spacing:-.01em;color:oklch(0.3 0.01 265)">Elgin<img src="assets/images/clientes/elgin.png" alt="Elgin" sc-camel-on-error="{{ hideImg }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:28px;box-sizing:border-box;background:white"></div>
+    <div style="position:relative;overflow:hidden;flex:none;width:min(260px,72vw);height:150px;background:white;border:1px solid oklch(0.86 0.01 85);border-radius:12px;display:flex;align-items:center;justify-content:center;padding:16px;text-align:center;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:110%;font-size:26px;letter-spacing:-.01em;color:oklch(0.3 0.01 265)">Artefapi<img src="assets/images/clientes/artefapi.png" alt="Artefapi" sc-camel-on-error="{{ hideImg }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:28px;box-sizing:border-box;background:white"></div>
+    <div style="position:relative;overflow:hidden;flex:none;width:min(260px,72vw);height:150px;background:white;border:1px solid oklch(0.86 0.01 85);border-radius:12px;display:flex;align-items:center;justify-content:center;padding:16px;text-align:center;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:110%;font-size:26px;letter-spacing:-.01em;color:oklch(0.3 0.01 265)">Bravus Sport<img src="assets/images/clientes/bravus-sport.png" alt="Bravus Sport" sc-camel-on-error="{{ hideImg }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:28px;box-sizing:border-box;background:white"></div>
+    <div style="position:relative;overflow:hidden;flex:none;width:min(260px,72vw);height:150px;background:white;border:1px solid oklch(0.86 0.01 85);border-radius:12px;display:flex;align-items:center;justify-content:center;padding:16px;text-align:center;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:110%;font-size:26px;letter-spacing:-.01em;color:oklch(0.3 0.01 265)">Mega Comercial<img src="assets/images/clientes/mega-comercial.png" alt="Mega Comercial" sc-camel-on-error="{{ hideImg }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:28px;box-sizing:border-box;background:white"></div>
+    <div aria-hidden="true" style="position:relative;overflow:hidden;flex:none;width:min(260px,72vw);height:150px;background:white;border:1px solid oklch(0.86 0.01 85);border-radius:12px;display:flex;align-items:center;justify-content:center;padding:16px;text-align:center;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:110%;font-size:26px;letter-spacing:-.01em;color:oklch(0.3 0.01 265)">JVS<img src="assets/images/clientes/jvs.png" alt="JVS" sc-camel-on-error="{{ hideImg }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:28px;box-sizing:border-box;background:white"></div>
+    <div aria-hidden="true" style="position:relative;overflow:hidden;flex:none;width:min(260px,72vw);height:150px;background:white;border:1px solid oklch(0.86 0.01 85);border-radius:12px;display:flex;align-items:center;justify-content:center;padding:16px;text-align:center;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:110%;font-size:26px;letter-spacing:-.01em;color:oklch(0.3 0.01 265)">Midea<img src="assets/images/clientes/midea.png" alt="Midea" sc-camel-on-error="{{ hideImg }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:28px;box-sizing:border-box;background:white"></div>
+    <div aria-hidden="true" style="position:relative;overflow:hidden;flex:none;width:min(260px,72vw);height:150px;background:white;border:1px solid oklch(0.86 0.01 85);border-radius:12px;display:flex;align-items:center;justify-content:center;padding:16px;text-align:center;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:110%;font-size:26px;letter-spacing:-.01em;color:oklch(0.3 0.01 265)">Elgin<img src="assets/images/clientes/elgin.png" alt="Elgin" sc-camel-on-error="{{ hideImg }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:28px;box-sizing:border-box;background:white"></div>
+    <div aria-hidden="true" style="position:relative;overflow:hidden;flex:none;width:min(260px,72vw);height:150px;background:white;border:1px solid oklch(0.86 0.01 85);border-radius:12px;display:flex;align-items:center;justify-content:center;padding:16px;text-align:center;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:110%;font-size:26px;letter-spacing:-.01em;color:oklch(0.3 0.01 265)">Artefapi<img src="assets/images/clientes/artefapi.png" alt="Artefapi" sc-camel-on-error="{{ hideImg }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:28px;box-sizing:border-box;background:white"></div>
+    <div aria-hidden="true" style="position:relative;overflow:hidden;flex:none;width:min(260px,72vw);height:150px;background:white;border:1px solid oklch(0.86 0.01 85);border-radius:12px;display:flex;align-items:center;justify-content:center;padding:16px;text-align:center;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:110%;font-size:26px;letter-spacing:-.01em;color:oklch(0.3 0.01 265)">Bravus Sport<img src="assets/images/clientes/bravus-sport.png" alt="Bravus Sport" sc-camel-on-error="{{ hideImg }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:28px;box-sizing:border-box;background:white"></div>
+    <div aria-hidden="true" style="position:relative;overflow:hidden;flex:none;width:min(260px,72vw);height:150px;background:white;border:1px solid oklch(0.86 0.01 85);border-radius:12px;display:flex;align-items:center;justify-content:center;padding:16px;text-align:center;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:110%;font-size:26px;letter-spacing:-.01em;color:oklch(0.3 0.01 265)">Mega Comercial<img src="assets/images/clientes/mega-comercial.png" alt="Mega Comercial" sc-camel-on-error="{{ hideImg }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:28px;box-sizing:border-box;background:white"></div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona" style="max-width:1240px;margin:0 auto;padding:72px 24px 24px;scroll-margin-top:80px">
+  <div style="background:oklch(0.2 0.01 265);color:oklch(0.97 0.005 85);border-radius:16px;padding:clamp(32px,5vw,64px);display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:14px;max-width:640px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:oklch(0.82 0.12 195)">Como funciona</span>
+      <h2 style="margin:0;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:105%;font-size:clamp(32px,4vw,48px);line-height:1.02;letter-spacing:-.02em">Da cotação à entrega em quatro passos</h2>
+    </div>
+    <div aria-hidden="true" style="position:relative;height:112px;margin:0 28px">
+      <div style="position:absolute;left:0;right:0;top:66px;height:0;border-top:2px dashed rgba(255,255,255,.28);transform:translateY(-1px)"></div>
+      <div class="ic-anim" style="position:absolute;left:0;top:66px;height:3px;margin-top:-1.5px;background:oklch(0.8 0.12 195);border-radius:2px;width:0;animation:ic-prog 12s linear infinite"></div>
+      <div class="ic-anim ic-node" style="position:absolute;left:0%;top:66px;width:48px;height:48px;margin:-24px 0 0 -24px;border-radius:50%;border:2px solid rgba(255,255,255,.28);background:oklch(0.2 0.01 265);color:#fff;display:flex;align-items:center;justify-content:center;z-index:2;animation:ic-n1 12s linear infinite"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v4h4M9.5 12h5M9.5 16h5"></path></svg></div>
+      <div class="ic-anim ic-node" style="position:absolute;left:33.333%;top:66px;width:48px;height:48px;margin:-24px 0 0 -24px;border-radius:50%;border:2px solid rgba(255,255,255,.28);background:oklch(0.2 0.01 265);color:#fff;display:flex;align-items:center;justify-content:center;z-index:2;animation:ic-n2 12s linear infinite"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><polyline points="3,7 12,13 21,7"></polyline></svg></div>
+      <div class="ic-anim ic-node" style="position:absolute;left:66.667%;top:66px;width:48px;height:48px;margin:-24px 0 0 -24px;border-radius:50%;border:2px solid rgba(255,255,255,.28);background:oklch(0.2 0.01 265);color:#fff;display:flex;align-items:center;justify-content:center;z-index:2;animation:ic-n3 12s linear infinite"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4.5 4.5L19 7"></path></svg></div>
+      <div class="ic-anim ic-node" style="position:absolute;left:100%;top:66px;width:48px;height:48px;margin:-24px 0 0 -24px;border-radius:50%;border:2px solid rgba(255,255,255,.28);background:oklch(0.2 0.01 265);color:#fff;display:flex;align-items:center;justify-content:center;z-index:2;animation:ic-n4 12s linear infinite"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7.5l9-4.5 9 4.5v9l-9 4.5-9-4.5z"></path><path d="M3 7.5l9 4.5 9-4.5M12 12v9"></path></svg></div>
+      <div class="ic-anim" style="position:absolute;left:0;top:66px;width:0;height:0;z-index:3;opacity:0;animation:ic-ta 12s linear infinite"><div class="ic-anim" style="position:absolute;left:-19px;top:-26px;width:38px;height:50px;background:#fff;border-radius:4px;padding:9px 7px;box-sizing:border-box;display:flex;flex-direction:column;gap:5px;box-shadow:0 6px 16px rgba(0,0,0,.35);animation:ic-sway .8s ease-in-out infinite"><span style="height:3px;border-radius:2px;background:oklch(0.8 0.12 195)"></span><span style="height:3px;border-radius:2px;background:oklch(0.8 0.12 195)"></span><span style="height:3px;width:60%;border-radius:2px;background:oklch(0.8 0.12 195)"></span><span style="height:3px;width:80%;border-radius:2px;background:oklch(0.8 0.12 195)"></span></div></div><div class="ic-anim" style="position:absolute;left:0;top:66px;width:0;height:0;z-index:3;opacity:0;animation:ic-tb 12s linear infinite"><span style="position:absolute;left:-46px;top:-6px;width:14px;height:2px;border-radius:1px;background:rgba(255,255,255,.5)"></span><span style="position:absolute;left:-52px;top:1px;width:20px;height:2px;border-radius:1px;background:rgba(255,255,255,.35)"></span><div class="ic-anim" style="position:absolute;left:-24px;top:-18px;width:48px;height:34px;animation:ic-fly .6s ease-in-out infinite;filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))"><svg width="48" height="34" sc-camel-view-box="0 0 48 34"><rect width="48" height="34" rx="4" fill="#fff"></rect><polyline points="3,5 24,21 45,5" fill="none" stroke="oklch(0.62 0.11 195)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></polyline></svg></div></div><div class="ic-anim" style="position:absolute;left:0;top:66px;width:0;height:0;z-index:3;opacity:0;animation:ic-tc 12s linear infinite"><div class="ic-anim" style="position:absolute;left:-46px;top:-37px;width:92px;height:44px;animation:ic-bob .35s ease-in-out infinite"><span style="position:absolute;left:0;top:0;width:62px;height:36px;background:#fff;border-radius:3px;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;gap:3px"><span style="font-family:'Archivo',sans-serif;font-weight:800;font-size:11px;letter-spacing:.02em;color:oklch(0.27 0.01 265)">IMEDIATA</span><span style="font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:7px;letter-spacing:.28em;color:oklch(0.45 0.09 205)">CARGO</span></span><span style="position:absolute;left:64px;top:12px;width:27px;height:24px;background:oklch(0.8 0.12 195);border-radius:2px 9px 2px 2px"></span><span style="position:absolute;left:78px;top:16px;width:9px;height:7px;background:oklch(0.27 0.01 265);border-radius:1px 5px 1px 1px;opacity:.85"></span><span class="ic-anim" style="position:absolute;top:32px;left:9px;width:12px;height:12px;border-radius:50%;background:oklch(0.2 0.01 265);border:2px solid #fff;box-sizing:border-box;animation:ic-wheel .5s linear infinite"><span style="position:absolute;left:50%;top:0;width:1px;height:100%;background:#fff;margin-left:-.5px"></span></span><span class="ic-anim" style="position:absolute;top:32px;left:70px;width:12px;height:12px;border-radius:50%;background:oklch(0.2 0.01 265);border:2px solid #fff;box-sizing:border-box;animation:ic-wheel .5s linear infinite"><span style="position:absolute;left:50%;top:0;width:1px;height:100%;background:#fff;margin-left:-.5px"></span></span></div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:28px">
+      <div style="display:flex;flex-direction:column;gap:14px;border-top:2px solid oklch(0.8 0.12 195);padding-top:20px">
+        <span class="ic-anim" style="animation:ic-s1 12s linear infinite;font-family:'Archivo',sans-serif;font-weight:800;font-size:56px;line-height:1;color:oklch(0.82 0.12 195)">1</span>
+        <h3 style="margin:0;font-size:20px;font-weight:700">Envie os dados da carga</h3>
+        <p style="margin:0;line-height:1.6;color:oklch(0.84 0.01 265)">Preencha o formulário com peso, medidas, valor da nota fiscal, origem e destino.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;border-top:2px solid oklch(0.8 0.12 195);padding-top:20px">
+        <span class="ic-anim" style="animation:ic-s2 12s linear infinite;font-family:'Archivo',sans-serif;font-weight:800;font-size:56px;line-height:1;color:oklch(0.82 0.12 195)">2</span>
+        <h3 style="margin:0;font-size:20px;font-weight:700">Receba a cotação</h3>
+        <p style="margin:0;line-height:1.6;color:oklch(0.84 0.01 265)">Nossa equipe comercial analisa a solicitação e responde por e-mail com valor e condições.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;border-top:2px solid oklch(0.8 0.12 195);padding-top:20px">
+        <span class="ic-anim" style="animation:ic-s3 12s linear infinite;font-family:'Archivo',sans-serif;font-weight:800;font-size:56px;line-height:1;color:oklch(0.82 0.12 195)">3</span>
+        <h3 style="margin:0;font-size:20px;font-weight:700">Aprove e despache</h3>
+        <p style="margin:0;line-height:1.6;color:oklch(0.84 0.01 265)">Com o aceite, agendamos a coleta e acompanhamos o embarque até a entrega.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;border-top:2px solid oklch(0.8 0.12 195);padding-top:20px">
+        <span class="ic-anim" style="animation:ic-s4 12s linear infinite;font-family:'Archivo',sans-serif;font-weight:800;font-size:56px;line-height:1;color:oklch(0.82 0.12 195)">4</span>
+        <h3 style="margin:0;font-size:20px;font-weight:700">Receba sua carga</h3>
+        <p style="margin:0;line-height:1.6;color:oklch(0.84 0.01 265)">Acompanhamos o transporte até o destino e entregamos a mercadoria com segurança.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div style="max-width:1240px;margin:0 auto;padding:40px 24px 0"><div style="display:flex;align-items:center;gap:16px"><div style="flex:1;height:1px;background:oklch(0.86 0.01 85)"></div><span style="width:9px;height:9px;background:oklch(0.8 0.12 195);transform:rotate(45deg)"></span><div style="flex:1;height:1px;background:oklch(0.86 0.01 85)"></div></div></div>
+<!-- SOBRE -->
+<section id="sobre" style="max-width:1240px;margin:0 auto;padding:72px 24px 24px;scroll-margin-top:80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:56px;align-items:center">
+  <div style="aspect-ratio: 4/3; border-radius: 12px; background: url(&quot;assets/images/foto-carga.png&quot;) center / cover no-repeat; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono',monospace; font-size: 13px; color: oklch(0.45 0.01 265); text-align: center; padding: 24px; border: 1px solid oklch(0.86 0.01 85)"></div>
+  <div style="display:flex;flex-direction:column;gap:22px">
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:oklch(0.48 0.09 205)">Sobre a Imediata Cargo</span>
+    <h2 style="margin:0;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:105%;font-size:clamp(32px,4vw,48px);line-height:1.02;letter-spacing:-.02em;text-wrap:balance">Compromisso com o prazo e com a sua mercadoria</h2>
+    <p style="margin:0;font-size:17px;line-height:1.65;color:oklch(0.35 0.01 265);text-wrap:pretty">A Transportadora Imediata Cargo atua há mais de 6 anos no mercado de transporte rodoviário de cargas, a partir de São Paulo, com operação estruturada, seguro contratado e um canal direto com o cliente, sem intermediários entre você e quem cuida da sua carga.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:6px">
+      <div style="display:flex;flex-direction:column;gap:6px;border-top:3px solid oklch(0.8 0.12 195);padding-top:14px"><strong style="font-size:17px">Transparência</strong><span style="font-size:15px;line-height:1.5;color:oklch(0.38 0.01 265)">Cotação clara, sem surpresas.</span></div>
+      <div style="display:flex;flex-direction:column;gap:6px;border-top:3px solid oklch(0.8 0.12 195);padding-top:14px"><strong style="font-size:17px">Segurança</strong><span style="font-size:15px;line-height:1.5;color:oklch(0.38 0.01 265)">Seguro Sompo em cada embarque.</span></div>
+      <div style="display:flex;flex-direction:column;gap:6px;border-top:3px solid oklch(0.8 0.12 195);padding-top:14px"><strong style="font-size:17px">Agilidade</strong><span style="font-size:15px;line-height:1.5;color:oklch(0.38 0.01 265)">Resposta direta da equipe comercial.</span></div>
+    </div>
+  </div>
+</section>
+
+<div style="max-width:1240px;margin:0 auto;padding:40px 24px 0"><div style="display:flex;align-items:center;gap:16px"><div style="flex:1;height:1px;background:oklch(0.86 0.01 85)"></div><span style="width:9px;height:9px;background:oklch(0.8 0.12 195);transform:rotate(45deg)"></span><div style="flex:1;height:1px;background:oklch(0.86 0.01 85)"></div></div></div>
+<!-- FAQ -->
+<section id="faq" style="max-width:920px;margin:0 auto;padding:72px 24px 24px;scroll-margin-top:80px">
+  <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:36px">
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:oklch(0.48 0.09 205)">Dúvidas frequentes</span>
+    <h2 style="margin:0;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:105%;font-size:clamp(32px,4vw,48px);line-height:1.02;letter-spacing:-.02em">Antes de pedir sua cotação</h2>
+  </div>
+  <div style="display:flex;flex-direction:column;border-top:1px solid oklch(0.85 0.01 85)">
+    <details style="border-bottom:1px solid oklch(0.85 0.01 85);padding:22px 0">
+      <summary style="display:flex;justify-content:space-between;gap:24px;align-items:center;font-size:19px;font-weight:600">Como calculo a cubagem da minha carga?<span class="faq-plus" style="font-size:28px;line-height:1;color:oklch(0.48 0.09 205);transition:transform .2s">+</span></summary>
+      <p style="margin:14px 0 0;line-height:1.65;color:oklch(0.35 0.01 265);max-width:720px">Multiplique comprimento × largura × altura de cada volume (em metros) e some os resultados. No formulário, basta informar as medidas em centímetros e a quantidade: a cubagem é calculada para você.</p>
+    </details>
+    <details style="border-bottom:1px solid oklch(0.85 0.01 85);padding:22px 0">
+      <summary style="display:flex;justify-content:space-between;gap:24px;align-items:center;font-size:19px;font-weight:600">Por que preciso informar o valor da nota fiscal?<span class="faq-plus" style="font-size:28px;line-height:1;color:oklch(0.48 0.09 205);transition:transform .2s">+</span></summary>
+      <p style="margin:14px 0 0;line-height:1.65;color:oklch(0.35 0.01 265);max-width:720px">O valor da mercadoria é usado para dimensionar o seguro da carga e compor corretamente o frete.</p>
+    </details>
+    <details style="border-bottom:1px solid oklch(0.85 0.01 85);padding:22px 0">
+      <summary style="display:flex;justify-content:space-between;gap:24px;align-items:center;font-size:19px;font-weight:600">Como recebo a cotação?<span class="faq-plus" style="font-size:28px;line-height:1;color:oklch(0.48 0.09 205);transition:transform .2s">+</span></summary>
+      <p style="margin:14px 0 0;line-height:1.65;color:oklch(0.35 0.01 265);max-width:720px">Nossa equipe comercial analisa a solicitação e responde ao e-mail informado no formulário. Se preferir, fale conosco pelo WhatsApp (11) 94923-6272.</p>
+    </details>
+    <details style="border-bottom:1px solid oklch(0.85 0.01 85);padding:22px 0">
+      <summary style="display:flex;justify-content:space-between;gap:24px;align-items:center;font-size:19px;font-weight:600">A carga é segurada?<span class="faq-plus" style="font-size:28px;line-height:1;color:oklch(0.48 0.09 205);transition:transform .2s">+</span></summary>
+      <p style="margin:14px 0 0;line-height:1.65;color:oklch(0.35 0.01 265);max-width:720px">Sim. Nosso seguro é contratado com a Sompo Seguros. Detalhes de cobertura são informados junto com a cotação.</p>
+    </details>
+  </div>
+</section>
+
+
+<div style="max-width:1240px;margin:0 auto;padding:40px 24px 0"><div style="display:flex;align-items:center;gap:16px"><div style="flex:1;height:1px;background:oklch(0.86 0.01 85)"></div><span style="width:9px;height:9px;background:oklch(0.8 0.12 195);transform:rotate(45deg)"></span><div style="flex:1;height:1px;background:oklch(0.86 0.01 85)"></div></div></div>
+<!-- CTA + CONTATO -->
+<section id="contato" style="max-width:1240px;margin:0 auto;padding:72px 24px 96px;scroll-margin-top:80px">
+  <div style="background:oklch(0.8 0.12 195);border-radius:16px;padding:clamp(32px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:40px;align-items:center;color:oklch(0.2 0.01 265)">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <h2 style="margin:0;font-family:'Archivo',sans-serif;font-weight:800;font-stretch:105%;font-size:clamp(32px,4vw,52px);line-height:1;letter-spacing:-.02em;text-wrap:balance">Tem uma carga para despachar?</h2>
+      <p style="margin:0;font-size:18px;line-height:1.55;max-width:460px">Peça sua cotação agora ou fale direto com a nossa equipe comercial.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a href="#cotacao" style="background:oklch(0.2 0.01 265);color:white;padding:15px 26px;border-radius:6px;font-weight:700" style-hover="background:oklch(0.3 0.01 265);color:white">Solicitar cotação</a>
+        <a href="https://wa.me/5511949236272" style="display:inline-flex;align-items:center;gap:9px;align-self:flex-start;border:2px solid oklch(0.2 0.01 265);padding:13px 24px;border-radius:6px;font-weight:700;color:oklch(0.2 0.01 265)" style-hover="background:oklch(0.2 0.01 265);color:white"><svg width="24" height="24" sc-camel-view-box="0 0 24 24" aria-hidden="true" style="flex:none"><path d="M12 2.6a9.4 9.4 0 0 0-8 14.3L2.8 21.3l4.5-1.2A9.4 9.4 0 1 0 12 2.6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path><path transform="translate(5.6 5.5) scale(.5)" fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>WhatsApp</a>
+      </div>
+    </div>
+    <div style="background:oklch(0.99 0.003 85);border-radius:10px;padding:28px;display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;flex-direction:column;gap:3px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:oklch(0.45 0.01 265)">Endereço</span><p style="margin: 0">Av. do Poeta 450 – Jd. Julieta – SP – 02161-160</p></div>
+      <div style="display:flex;flex-direction:column;gap:3px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:oklch(0.45 0.01 265)">Telefone e WhatsApp</span><a href="tel:+551126883141" style="display:inline-flex;align-items:center;gap:9px;align-self:flex-start;font-size:20px;font-weight:700"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex:none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg>(11) 2688-3141</a><a href="https://wa.me/5511949236272" style="display:inline-flex;align-items:center;gap:9px;align-self:flex-start;font-size:20px;font-weight:700"><svg width="28" height="28" sc-camel-view-box="0 0 24 24" aria-hidden="true" style="flex:none"><path d="M12 2.6a9.4 9.4 0 0 0-8 14.3L2.8 21.3l4.5-1.2A9.4 9.4 0 1 0 12 2.6z" fill="none" stroke="oklch(0.74 0.19 150)" stroke-width="2" stroke-linejoin="round"></path><path transform="translate(5.6 5.5) scale(.5)" fill="oklch(0.74 0.19 150)" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>(11) 94923-6272</a></div>
+      <div style="display:flex;flex-direction:column;gap:3px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:oklch(0.45 0.01 265)">E-mail comercial</span><a href="mailto:comercial@imediatacargo.com.br" style="display:inline-flex;align-items:center;gap:9px;align-self:flex-start;font-size:16px;font-weight:600"><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex:none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><polyline points="3,7 12,13 21,7"></polyline></svg>comercial@imediatacargo.com.br</a></div>
+    </div>
+  </div>
+</section>
+
+<footer style="background:oklch(0.17 0.01 265);color:oklch(0.82 0.01 265)">
+  <div style="max-width:1240px;margin:0 auto;padding:40px 24px;display:flex;flex-wrap:wrap;gap:24px 48px;justify-content:space-between;font-size:14px;line-height:1.7">
+    <div style="display:flex;flex-direction:column;gap:4px">
+      <img src="assets/images/logo-rodape.png" alt="Imediata Cargo — Excelência em transportes" style="height:130px;width:auto;align-self:flex-start;margin-bottom:12px"><strong style="color:white;font-family:'Archivo',sans-serif;font-size:18px;font-stretch:110%">Transportadora Imediata Cargo LTDA</strong>
+      <span>CNPJ 46.444.343/0001-46 · IE 136.101.493.116</span>
+      <p style="margin: 0">Av. do Poeta 450 – Jd. Julieta – SP – 02161-160</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:4px">
+      <a href="mailto:comercial@imediatacargo.com.br" style="display:inline-flex;align-items:center;gap:9px;align-self:flex-start;color:oklch(0.9 0.01 265)" style-hover="color:oklch(0.82 0.12 195)"><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex:none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><polyline points="3,7 12,13 21,7"></polyline></svg>comercial@imediatacargo.com.br</a>
+      <a href="https://www.imediatacargo.com.br" style="color:oklch(0.9 0.01 265)" style-hover="color:oklch(0.82 0.12 195)">www.imediatacargo.com.br</a>
+      <span>© 2026 Imediata Cargo. Todos os direitos reservados.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5511949236272" aria-label="WhatsApp" style="position:fixed;right:20px;bottom:20px;z-index:60;background:oklch(0.2 0.01 265);color:white;padding:14px 20px;border-radius:999px;font-weight:700;font-size:15px;box-shadow:0 10px 30px oklch(0.1 0.01 265 / .4);display:flex;gap:10px;align-items:center" style-hover="background:oklch(0.3 0.01 265);color:white"><svg width="28" height="28" sc-camel-view-box="0 0 24 24" aria-hidden="true" style="flex:none"><path d="M12 2.6a9.4 9.4 0 0 0-8 14.3L2.8 21.3l4.5-1.2A9.4 9.4 0 1 0 12 2.6z" fill="none" stroke="oklch(0.74 0.19 150)" stroke-width="2" stroke-linejoin="round"></path><path transform="translate(5.6 5.5) scale(.5)" fill="oklch(0.74 0.19 150)" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>WhatsApp</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;formEndpoint&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;enviar-cotacao.php&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Formulário&quot;}}">
+class Component extends DCLogic {
+  state = { sameCity:false, empresa:'', email:'', telefone:'', origem:'', destino:'', peso:'', nf:'', cubManual:null, trap:'',
+    volumes:[{q:'1',c:'',l:'',a:''}], status:'idle', error:'' };
+  num(s){ const n=parseFloat(String(s).replace(/\./g,'').replace(',','.')); return isNaN(n)?0:n; }
+  numLoose(s){ const n=parseFloat(String(s).replace(',','.')); return isNaN(n)?0:n; }
+  toM(s){ const t=String(s).trim(), n=this.numLoose(t); if(!(n>0)) return 0; return (/[.,]\d/.test(t) && n<=15) ? n : n/100; }
+  calcCub(vs){ return vs.reduce((t,v)=>t+this.numLoose(v.q||1)*this.toM(v.c)*this.toM(v.l)*this.toM(v.a),0); }
+  fmt(n){ if(!(n>0)) return ''; let t=n.toFixed(3).replace(/0$/,''); return t.replace('.',','); }
+  dest(){ const s=this.state; return s.sameCity?s.origem:s.destino; }
+  numOnly(v){ return String(v).replace(/[^\d.,]/g,''); }
+  setNum(k){ return e=>this.setState({[k]:this.numOnly(e.target.value)}); }
+  set(k){ return e=>this.setState({[k]:e.target.value}); }
+  setVol(i,k,val){ this.setState(s=>({volumes:s.volumes.map((v,j)=>j===i?{...v,[k]:val}:v), cubManual:null})); }
+  validate(){
+    const s=this.state, cub=s.cubManual!==null?this.numLoose(s.cubManual):this.calcCub(s.volumes);
+    if(!s.empresa.trim()) return 'Informe o nome da empresa.';
+    if(!/^\S+@\S+\.\S+$/.test(s.email.trim())) return 'Informe um e-mail válido.';
+    if(!s.origem.trim()||!this.dest().trim()) return 'Informe origem e destino da carga.';
+    if(this.numLoose(s.peso)<=0) return 'Informe o peso da carga.';
+    if(s.volumes.some(v=>!(this.numLoose(v.c)>0&&this.numLoose(v.l)>0&&this.numLoose(v.a)>0))) return 'Preencha comprimento, largura e altura de cada volume.';
+    if(cub<=0) return 'Informe a cubagem total.';
+    if(this.num(s.nf)<=0) return 'Informe o valor da nota fiscal.';
+    if(s.telefone && s.telefone.length<10) return 'Telefone inválido: informe DDD + número (11 dígitos).';
+    return '';
+  }
+  whats(){
+    const s=this.state;
+    const t=`Cotação de frete\nEmpresa: ${s.empresa}\nE-mail: ${s.email}\nOrigem: ${s.origem}\nDestino: ${this.dest()}\nPeso: ${s.peso} kg\nCubagem: ${this.fmt(this.calcCub(s.volumes))} m³\nNF: R$ ${s.nf}`;
+    return 'https://wa.me/5511949236272?text='+encodeURIComponent(t);
+  }
+  stripRef = React.createRef();
+  paused=false; pos=0; until=0;
+  scrollStrip(d){ const el=this.stripRef.current; if(!el) return; this.until=Date.now()+800; el.scrollBy({left:d*(el.clientWidth*0.8),behavior:'smooth'}); }
+  componentDidMount(){
+    this.reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const tick=()=>{ const el=this.stripRef.current;
+      if(el && !this.reduce && !this.paused && Date.now()>this.until && el.scrollWidth>el.clientWidth){
+        const half=(el.scrollWidth+16)/2;
+        if(Math.abs(el.scrollLeft-this.pos)>2) this.pos=el.scrollLeft;
+        this.pos+=0.6; if(this.pos>=half) this.pos-=half; el.scrollLeft=this.pos;
+      } else if(el){ this.pos=el.scrollLeft; const half=(el.scrollWidth+16)/2; if(el.scrollLeft<=0 && Date.now()>this.until) el.scrollLeft=half; }
+      this.raf=requestAnimationFrame(tick); };
+    this.raf=requestAnimationFrame(tick);
+  }
+  componentWillUnmount(){ cancelAnimationFrame(this.raf); }
+  submit = async (e)=>{
+    e.preventDefault();
+    if(this.state.status==='sending') return;
+    const err=this.validate();
+    if(err){ this.setState({status:'error',error:err,fallback:false}); return; }
+    const s=this.state;
+    const cub=s.cubManual!==null?this.numLoose(s.cubManual):this.calcCub(s.volumes);
+    const payload={empresa:s.empresa,email:s.email,telefone:s.telefone,origem:s.origem,destino:this.dest(),peso_kg:s.peso,nota_fiscal_rs:s.nf,cubagem_m3:this.fmt(cub),volumes:s.volumes.map(v=>({quantidade:v.q,comprimento_cm:Math.round(this.toM(v.c)*1000)/10,largura_cm:Math.round(this.toM(v.l)*1000)/10,altura_cm:Math.round(this.toM(v.a)*1000)/10})),website:s.trap};
+    this.setState({status:'sending',error:''});
+    try{
+      const r=await fetch(this.props.formEndpoint||'enviar-cotacao.php',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      const j=await r.json();
+      if(!r.ok||!j.ok) throw new Error(j.error||'falha');
+      this.setState({status:'ok'});
+    }catch(x){
+      this.setState({status:'error',error:'Não foi possível enviar agora. Tente novamente ou envie sua solicitação pelo WhatsApp.',fallback:true});
+    }
+  };
+  renderVals(){
+    const s=this.state, vs=s.volumes;
+    const cubVal=s.cubManual!==null?s.cubManual:this.fmt(this.calcCub(vs));
+    return {
+      empresa:s.empresa,email:s.email,telefone:s.telefone,origem:s.origem,destino:this.dest(),peso:s.peso,nf:s.nf,trap:s.trap,cubagem:cubVal,
+      setEmpresa:this.set('empresa'),setEmail:this.set('email'),setTelefone:e=>this.setState({telefone:e.target.value.replace(/\D/g,'').slice(0,11)}),setOrigem:this.set('origem'),setDestino:this.set('destino'),setPeso:this.setNum('peso'),setNf:this.setNum('nf'),setTrap:this.set('trap'),
+      setCub:e=>this.setState({cubManual:e.target.value.replace(/[^\d.,]/g,'')}),
+      volumes:vs.map((v,i)=>({q:v.q,c:v.c,l:v.l,a:v.a,
+        onQ:e=>this.setVol(i,'q',e.target.value.replace(/\D/g,'')),onC:e=>this.setVol(i,'c',this.numOnly(e.target.value)),onL:e=>this.setVol(i,'l',this.numOnly(e.target.value)),onA:e=>this.setVol(i,'a',this.numOnly(e.target.value)),
+        remove:()=>vs.length>1&&this.setState(st=>({volumes:st.volumes.filter((_,j)=>j!==i),cubManual:null})),
+        removeOpacity:vs.length>1?1:0.25})),
+      addVolume:()=>this.setState(st=>({volumes:[...st.volumes,{q:'1',c:'',l:'',a:''}],cubManual:null})),
+      stripRef:this.stripRef, hideImg:e=>{e.target.style.display="none"}, pauseStrip:()=>{this.paused=true}, resumeStrip:()=>{this.paused=false}, prevClient:()=>this.scrollStrip(-1), nextClient:()=>this.scrollStrip(1),
+      sameCity:s.sameCity, toggleSame:e=>this.setState({sameCity:e.target.checked}),
+      submit:this.submit,
+      submitLabel:s.status==='sending'?'Enviando…':'Enviar solicitação de cotação',
+      showForm:s.status!=='ok', showSuccess:s.status==='ok',
+      hasError:s.status==='error', errorMsg:s.error, showFallback:!!s.fallback, whatsLink:this.whats(),
+      reset:()=>this.setState({status:'idle',sameCity:false,empresa:'',email:'',telefone:'',origem:'',destino:'',peso:'',nf:'',cubManual:null,volumes:[{q:'1',c:'',l:'',a:''}]})
+    };
+  }
+}
+</script>
+
+
+</body></html>
