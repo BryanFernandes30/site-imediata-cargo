@@ -43,12 +43,6 @@ Site institucional da **Transportadora Imediata Cargo**, com formulário de **co
 > **Importante:** o que vai para o ar é sempre o conteúdo de `publicar/`.
 > A pasta `src/` serve para consultar e editar textos, trocar imagens e guardar o histórico dos arquivos originais.
 
-## Como publicar
-
-Resumo (detalhes em [`docs/PUBLICACAO.md`](docs/PUBLICACAO.md)):
-
-1. Envie `publicar/index.html` e `publicar/enviar-cotacao.php` para a pasta `public_html` da hospedagem (Hostinger).
-2. Faça um teste enviando uma cotação pelo formulário e confira se o e-mail chegou.
 
 ## Formulário de cotação
 
@@ -60,12 +54,5 @@ Resumo (detalhes em [`docs/PUBLICACAO.md`](docs/PUBLICACAO.md)):
 
 HTML · CSS · JavaScript (React 18) · PHP (envio de e-mail) · Hostinger
 
-## Contato
 
-**Transportadora Imediata Cargo LTDA** · CNPJ 46.444.343/0001-46
-Av. do Poeta, 450 — Jd. Julieta — São Paulo/SP — CEP 02161-160
-📞 (11) 2688-3141 · 💬 WhatsApp (11) 94923-6272 · ✉️ comercial@imediatacargo.com.br
 
----
-
-© Transportadora Imediata Cargo. Todos os direitos reservados.
